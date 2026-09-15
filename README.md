@@ -88,6 +88,14 @@ weasyprint book/print.html book.pdf
 - 术语遵循中文技术文档通行译法：合成器（compositor）、客户端（client）、服务端（server）、表面（surface）、缓冲区（buffer）、注册表（registry）、全局对象（global）、帧回调（frame callback）等。
 - 中文正文使用全角标点，中英文之间以空格分隔。
 
+## 由 AutoClaw 构建
+
+本译本**完全由 [AutoClaw](https://autoglm.ai/) 构建**：从抓取原书、全文中英翻译、术语统一与校对，到 mdBook 站点、GitHub Pages 部署与 PDF 导出，全部由 AutoClaw 自动完成。谨此致以诚挚谢意。🙏
+
+想体验 AutoClaw？通过邀请链接注册：
+
+<https://autoglm.ai/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=fission&target_app=autoclaw&target_app_version=1.18.5&os=mac&IC=W3W76PDH>
+
 ## 许可与致谢
 
 本译本是 *The Wayland Protocol*（© 2021 Drew DeVault）的演绎作品，依照原书许可采用 **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** 发布，详见 [LICENSE](LICENSE)。
