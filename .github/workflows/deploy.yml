@@ -31,8 +31,16 @@ jobs:
       - name: Build the book
         run: mdbook build
 
-      - name: Copy PDF into the site
-        run: cp book.pdf book/book.pdf
+      - name: Generate PDF (WeasyPrint)
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq || true
+          sudo apt-get install -y -qq fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0 || true
+          python3 -m pip install --quiet --break-system-packages weasyprint || python3 -m pip install --quiet weasyprint
+          python3 -m weasyprint book/print.html book/book.pdf
+
+      - name: Fallback to committed PDF
+        run: test -f book/book.pdf || cp book.pdf book/book.pdf
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
