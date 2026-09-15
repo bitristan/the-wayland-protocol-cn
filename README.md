@@ -24,8 +24,9 @@
 
 ## 阅读方式
 
+- **在线阅读**：<https://bitristan.github.io/the-wayland-protocol-cn/>
 - **PDF**：[book.pdf](book.pdf)（约 130+ 页，内嵌中文字体）
-- **在线阅读**：用下面的命令本地构建（mdBook 会生成带侧边栏、全文搜索的网站）
+- 或用下面的命令本地构建（mdBook 会生成带侧边栏、全文搜索的网站）
 
 ## 构建
 
