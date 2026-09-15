@@ -1,0 +1,15 @@
+[book]
+title = "The Wayland Protocol（中文译本）"
+authors = ["Drew DeVault（原著）", "bitristan（中文翻译）"]
+description = "《The Wayland Protocol》中文译本 —— 关于 Wayland 显示服务器协议的免费书籍"
+language = "zh"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/bitristan/the-wayland-protocol-cn"
+no-section-label = true

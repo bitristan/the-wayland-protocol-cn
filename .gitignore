@@ -1,0 +1,12 @@
+# mdBook 构建产物
+/book/
+
+# macOS
+.DS_Store
+
+# 编辑器 / 临时文件
+*.swp
+*~
+.idea/
+.vscode/
+*.log
